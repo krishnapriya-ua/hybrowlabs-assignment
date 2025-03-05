@@ -15,10 +15,10 @@ const [name,setName]=useState([])
 
   return (
     <div>
-        <button onClick={()=>fetchApi()}>click me</button>
-         {name.map((names,index)=>
-        <li key={index}>{names.name}</li>
-        )} 
+        <button onClick={()=>fetchApi()}>ADD RECORD</button>
+        <p>{name.map((names,index)=>(
+          <li key={index}>{names}</li>
+        ))}</p>
     </div>
   )
 }
